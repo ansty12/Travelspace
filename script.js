@@ -1,4 +1,5 @@
 document.querySelector("button").addEventListener("click", function () {
+
   const inputs = document.querySelectorAll(".input");
 
   const depart = inputs[0].value.trim();
@@ -10,11 +11,9 @@ document.querySelector("button").addEventListener("click", function () {
     return;
   }
 
-  alert(
-    "Recherche TravelSpace\n\n" +
-    "Départ : " + depart +
-    "\nArrivée : " + arrivee +
-    "\nDate : " + date +
-    "\n\nLe moteur de comparaison sera connecté aux données réelles à l'étape suivante."
-  );
+  localStorage.setItem("depart", depart);
+  localStorage.setItem("arrivee", arrivee);
+  localStorage.setItem("date", date);
+
+  window.location.href = "results.html";
 });
