@@ -1,0 +1,12 @@
+{
+  "name": "travelspace",
+  "version": "1.0.0",
+  "description": "Plateforme mondiale de comparaison et réservation de voyages",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
