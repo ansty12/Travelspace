@@ -3,115 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TravelSpace - Comparez. Choisissez. Voyagez.</title>
-
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      background: #f5f8fc;
-      color: #172033;
-    }
-
-    header {
-      background: #0b63ce;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-
-    .logo {
-      font-size: 28px;
-      font-weight: bold;
-    }
-
-    .slogan {
-      margin-top: 6px;
-      font-size: 14px;
-    }
-
-    .hero {
-      padding: 35px 20px;
-      text-align: center;
-      background: white;
-    }
-
-    .hero h1 {
-      font-size: 30px;
-      margin-bottom: 12px;
-    }
-
-    .hero p {
-      color: #667085;
-      margin-bottom: 25px;
-    }
-
-    .search-box {
-      max-width: 600px;
-      margin: auto;
-      background: white;
-      padding: 20px;
-      border-radius: 15px;
-      box-shadow: 0 4px 18px rgba(0,0,0,0.08);
-    }
-
-    .input {
-      width: 100%;
-      padding: 14px;
-      margin-bottom: 12px;
-      border: 1px solid #d0d5dd;
-      border-radius: 8px;
-      font-size: 15px;
-    }
-
-    button {
-      width: 100%;
-      padding: 14px;
-      border: none;
-      border-radius: 8px;
-      background: #0b63ce;
-      color: white;
-      font-size: 16px;
-      font-weight: bold;
-    }
-
-    .services {
-      padding: 30px 20px;
-      text-align: center;
-    }
-
-    .services h2 {
-      margin-bottom: 20px;
-    }
-
-    .cards {
-      display: grid;
-      gap: 15px;
-      max-width: 700px;
-      margin: auto;
-    }
-
-    .card {
-      background: white;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 3px 12px rgba(0,0,0,0.06);
-    }
-
-    .card h3 {
-      margin-bottom: 8px;
-    }
-
-    .card p {
-      color: #667085;
-      font-size: 14px;
-    }
-  </style>
+  <title>TravelSpace</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -123,40 +16,66 @@
 
   <section class="hero">
     <h1>Trouvez votre meilleur voyage</h1>
-    <p>Comparez les vols et les offres des agences de voyage.</p>
+
+    <p>
+      Comparez les vols, les prix et les offres des agences de voyage.
+    </p>
 
     <div class="search-box">
-      <input class="input" type="text" placeholder="Ville ou aéroport de départ">
 
-      <input class="input" type="text" placeholder="Ville ou aéroport d'arrivée">
+      <input
+        class="input"
+        type="text"
+        placeholder="Ville ou aéroport de départ"
+      >
 
-      <input class="input" type="date">
+      <input
+        class="input"
+        type="text"
+        placeholder="Ville ou aéroport d'arrivée"
+      >
 
-      <button>🔎 Rechercher un vol</button>
+      <input
+        class="input"
+        type="date"
+      >
+
+      <button>
+        🔎 Rechercher un vol
+      </button>
+
     </div>
   </section>
 
   <section class="services">
-    <h2>Pourquoi TravelSpace ?</h2>
+
+    <h2>Pourquoi choisir TravelSpace ?</h2>
 
     <div class="cards">
 
       <div class="card">
-        <h3>✈️ Tous les vols</h3>
-        <p>Recherchez des vols auprès de différentes compagnies aériennes.</p>
+        <h3>✈️ Comparez les vols</h3>
+        <p>
+          Comparez les différentes compagnies aériennes et leurs vols.
+        </p>
       </div>
 
       <div class="card">
         <h3>💰 Comparez les prix</h3>
-        <p>Comparez les prix proposés par plusieurs agences.</p>
+        <p>
+          Découvrez les prix proposés par différentes agences de voyage.
+        </p>
       </div>
 
       <div class="card">
         <h3>🏢 Agences vérifiées</h3>
-        <p>Découvrez les agences et leurs informations avant de réserver.</p>
+        <p>
+          Consultez les informations et les offres des agences partenaires.
+        </p>
       </div>
 
     </div>
+
   </section>
 
 </body>
